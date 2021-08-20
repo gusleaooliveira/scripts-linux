@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Timer</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <style>
+            .btnEspecial{
+                width: 55px;
+                padding: 5px;
+            }
+            .imagemEspecial{
+                width: 45px !important;
+            }
+            .btn-column{
+                display: flex;
+                flex-direction: row,
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body class="raisin-black container">
+        
+        
+        <button id="sobre" class="float-right btn eggplant" >Sobre</button>
+
+        <section>
+            <h1 class="text-xxxlarge text-center">Timer:</h1>
+            <div class="padding-16">
+                <h2 class="text-jumbo text-center">
+                    <span id="tempo">00:00:00</span>
+                    <button id="btnPlay" class="btn btnEspecial eggplant">
+                        <img id="btnImagem" class="imagemEspecial" src="img/play-button.svg" />
+                    </button>
+                </h2>
+            
+                <div>
+                    <input type="text" id="textoFront" placeholder="Digite a anotação" class="input white border-bottom-eggplant-focus " />
+                    <div class="btn-column">
+                        <button id="btnCarregar" class="btn btn-block eggplant ">Carregar</button>
+                        <button id="btnAdicionar" class="btn btn-block eggplant ">+</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <script>require('./js/render');</script>
+    </body>
+</html>
